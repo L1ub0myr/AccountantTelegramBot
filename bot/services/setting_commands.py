@@ -5,6 +5,5 @@ async def set_default_commands(dp: Dispatcher):
     await dp.bot.set_my_commands([
         types.BotCommand("start", "Start bot"),
         types.BotCommand("help", "How the bot work?"),
-        types.BotCommand("language", "Change language"),
-        types.BotCommand("author", "More info...")
+        types.BotCommand("language", "Change language")
     ])

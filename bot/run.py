@@ -1,14 +1,18 @@
-from aiogram import executor
+from aiogram import executor, Dispatcher
 
-from loader import dp
+import handlers
+from data import ADMIN
+from loader import dp, bot
+from services import setting_commands
 
 
-async def on_startup(dp):
-    pass
+async def on_startup(dispatcher: Dispatcher):
+    await bot.send_message(ADMIN, '✅ BOT RUNNING')
+    await setting_commands.set_default_commands(dispatcher)
 
 
-async def on_shutdown(dp):
-    pass
+async def on_shutdown(dispatcher: Dispatcher):
+    await bot.send_message(ADMIN, '⛔️ BOT STOPPED')
 
 
 if __name__ == '__main__':
