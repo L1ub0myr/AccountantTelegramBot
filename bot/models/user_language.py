@@ -1,4 +1,4 @@
-from database_pattern import DataBase
+from .database_pattern import DataBase
 
 
 class Language(DataBase):
