@@ -3,12 +3,56 @@
     "hello": "Hello 👋, write how much you spent.",
     "help": "I will help summarize your expenses. Just write me the amount of the purchase, for example <b>11 150.50 1500</b> and choose the expense category. To subtract a certain amount, write -'amount', for example <b>-100 -150.20</b>\nTo view the balance, use the buttons",
     "language": "Choose a language:",
-    "other": "Sorry 😥, I didn't understand you. Check the correctness of the entered data."
+    "other": "Sorry 😥, I didn't understand you. Check the correctness of the entered data.",
+    "buttons": {
+      "balance": "Balance",
+      "categories": "Balance by categories",
+      "clean_balance": "Clean the balance",
+      "change_language": "Change Language"
+    },
+    "category": {
+      "food": "Food",
+      "utilities": "Utilities",
+      "transport": "Transport",
+      "clothes": "Clothes",
+      "health": "Health",
+      "personal_care": "Personal care",
+      "other": "Other",
+      "cancel": "Cancel"
+    },
+    "answer": {
+      "completed": "Done!",
+      "sure": "Do you really want to clear your balance?",
+      "yes": "Yes",
+      "no": "No"
+    }
   },
   "ua": {
     "hello": "Привіт 👋, напиши скільки ти витратив.",
     "help": "Я допоможу підсумовувати ваші витрати.\nПросто напишіть мені суму покупки, наприклад <b>11 150,50 1500</b> і оберіть  категорію витрат. Щоб відняти певну суму напишіть -'сума', наприклад <b>-100 -150.20</b>\nДля перегляду балансу скорестайтися кнопками",
     "language": "Виберіть мову:",
-    "other": "Вибачте 😥, я вас не зрозумів. Перевірте правильність  введених даних."
+    "other": "Вибачте 😥, я вас не зрозумів. Перевірте правильність  введених даних.",
+    "buttons": {
+      "balance": "Баланс",
+      "categories": "Баланс по категоріям",
+      "clean_balance": "Очистити баланс",
+      "change_language": "Змінити мову"
+    },
+    "category": {
+      "food": "Їжа",
+      "utilities": "Житло",
+      "transport": "Транспорт",
+      "clothes": "Одяг",
+      "health": "Здоровʼя",
+      "personal_care": "Особиста гігієна",
+      "other": "Інше",
+      "cancel": "Скасувати"
+    },
+    "answer": {
+      "completed": "Готово!",
+      "sure": "Ви дійсно бажаєте очистити баланс?",
+      "yes": "Так",
+      "no": "Ні"
+    }
   }
 }

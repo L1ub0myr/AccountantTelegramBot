@@ -6,7 +6,10 @@ from keyboards import inline
 from models import User
 
 
-@dp.message_handler(lambda message: "🔄" in message.text)
+words = ('🔄Change Language', '🔄Змінити мову')
+
+
+@dp.message_handler(lambda message: message.text in words)
 async def command_language(message: types.Message):
     user = User(message.from_user.id)
     await message.delete()
