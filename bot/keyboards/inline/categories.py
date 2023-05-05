@@ -3,7 +3,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from mics.utils import text_message_by_language
 
 
-def get_inline_keyboard(language: str):
+def get_category_keyboard(language: str):
     data = text_message_by_language(language, 'category')
 
     board_categories = InlineKeyboardMarkup(inline_keyboard=[

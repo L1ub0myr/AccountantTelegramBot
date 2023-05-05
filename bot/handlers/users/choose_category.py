@@ -19,10 +19,7 @@ async def choose_language(callback: types.CallbackQuery):
     value = callback.message.text
     if ',' in value:
         value = value.replace(',', '.')
-    if value[0] == '-':
-        user.wallet.minus(float(value[1:]))
-    else:
-        user.wallet.plus(float(value))
+    user.wallet.plus(float(value))
     user.buying_category.add_money_for_category(float(value), callback.data)
     await callback.answer(f'+ {callback.message.text} - {callback.data.title()}', show_alert=True)
     await callback.message.delete()
